@@ -1,0 +1,73 @@
+    1  apt install update
+    2  ping google.com
+    3  apt-get update
+    4  touch ansib
+    5  vi ansib
+    6  cat ansib
+    7  cat /etc/ansible/ansible.cfg
+    8  cat etc/ansible/ansible.cfg
+    9  cd /etc
+   10  ls
+   11  apt install openssh-server
+   12  ifconfig
+   13  cat /ansible/ansible.cfg
+   14  vi ansible/ansible.cfg
+   15  ansible pc2 -m setup
+   16  vi /ansible/hosts
+   17  vi ansible/hosts
+   18  ls
+   19  vi ansible/hosts
+   20  ansible pc2 -m setup
+   21  vi ansible/hosts
+   22  ansible win -m setup
+   23  vi ansible/hosts
+   24  ansible win -m setup
+   25  vi ansible/hosts
+   26  ansible win -m setup
+   27  vi /hosts
+   28  vi hosts
+   29  vi ansible/hosts
+   30  ansible win -m setup
+   31  apt install python-pip
+   32  pip install "pywinrm>=0.3.0" 
+   33  ansible win -m setup
+   34  ifconfig
+   35  hostname
+   36  ansible win -m setup
+   37  vi ansible/hosts
+   38  ansible win -m setup
+   39  ping pc2
+   40  vi ansible/hosts
+   41  ansible win -m setup
+   42  vi ansible/hosts
+   43  ansible win -m setup
+   44  vi ansible/hosts
+   45  ansible win -m setup
+   46  vi ansible/hosts
+   47  ansible win -m setup -u administrator -k
+   48  ansible credential -m raw -a "ping 192.168.1.19" -u administrator -k
+   49  ansible credential -m script -a "test.ps1" -u administrator -k
+   50  touch test.ps1
+   51  vi test.ps1
+   52  ansible credential -m script -a "test.ps1" -u administrator -k
+   53  history
+   54  vi ansible/hosts
+   55  git clone https://github.com/meralavijay/ansiclass.git
+   56  ls
+   57  cd ..
+   58  ls
+   59  git clone https://github.com/meralavijay/ansiclass.git
+   60  ls
+   61  cd ansiclass
+   62  ansible credential -i task1.yaml -m raw -a "mkdir C:/demo/task1"
+   63  ansible credential -i "firts task.yaml" -m raw -a "mkdir C:/demo/task1"
+   64  ansible credential -i "first task.yaml" -m raw -a "mkdir C:/demo/task1"
+   65  ansible credential -i first task.yaml -m raw -a "mkdir C:/demo/task1"
+   66  ls
+   67  cd task
+   68  cd Task
+   69  ls
+   70  ansible credential -i first task.yaml -m raw -a "mkdir C:/demo/task1"
+   71  ansible credential -i "first task.yaml" -m raw -a "mkdir C:/demo/task1"
+   72  history
+   73  history > Ansible.txt
