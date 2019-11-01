@@ -1,13 +1,18 @@
 ---
-credential:
- hosts: 
-  pc2:
-
- vars:
-   ansible_user: administrator
-   ansible_password: ntms
-   ansible_port: 5986
-   ansible_connection: "winrm"
-   ansible_winrm_server_cert_validation: ignore
-   ansible_winrm_transport: ntlm
-...   
+ vars_files:
+   - ext_variables.yml
+ tasks:
+   - name: Services
+     win_service:
+        name: "{{item}}"             
+        state:
+            {% if {{item}} == "BITS" -%}
+              stopped
+            {% elif {{item}} == "Windows Audio" -%}  
+              Started
+            {% elif {{item}} == "Dnscache" -%}
+              Started
+            {% endif %}
+    Loop:
+      - "{{servicesneedstodisable}}"        
+...               

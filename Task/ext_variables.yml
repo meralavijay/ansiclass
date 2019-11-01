@@ -1,6 +1,6 @@
 ---
 
 servicesneedstodisable:
-   [Bits, Dhcp, Dnscache]
+   [Bits, Windows Audio, Dnscache]
 
 ...
