@@ -1,6 +1,6 @@
 ---
  vars_files:
-   - ext_variables.yml
+    - ext_variables.yml
  tasks:
    - name: Services
      win_service:
