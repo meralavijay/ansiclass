@@ -7,9 +7,6 @@
     - name: Create Folder &Stop Service
       debug:
            msg: play1-task1
-
     - include_tasks: webrole.yml
-     when: ansible_mainrole == "win"
-    - include_tasks: winrole.yml
-     when: ansible_subrole == "web"    
+    - include_tasks: winrole.yml   
 ...
