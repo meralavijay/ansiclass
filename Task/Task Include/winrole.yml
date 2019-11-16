@@ -3,5 +3,5 @@
   win_file:
     path: C:\123
     state: directory
-  when: ansible_env.subrole == "web"   
+ # when: ansible_env.subrole == "web"   
 ...

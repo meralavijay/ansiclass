@@ -6,7 +6,7 @@
      win_service:
         name: "{{item}}"             
         state:
-            {% if {{item}} == "BITS" -%}
+            {% if ansible_env.subrole == "BITS" -%}
               stopped
             {% elif {{item}} == "Windows Audio" -%}  
               Started
