@@ -1,0 +1,15 @@
+---
+# tasks file for common
+
+- name: Install TelnetClient
+  win_feature:
+    name: "{{feature}}"
+    state: present
+
+- name: Stop all services
+  debug:
+    msg: " stopping the service"
+  win_service:
+    name: "{{services}}"  
+  notify: send_a_mail
+  tags: stop_service
