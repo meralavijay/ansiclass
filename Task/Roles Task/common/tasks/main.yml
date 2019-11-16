@@ -7,9 +7,8 @@
     state: present
 
 - name: Stop all services
-  debug:
-    msg: " stopping the service"
   win_service:
     name: "{{services}}"  
+    state: stopped
   notify: send_a_mail
   tags: stop_service
