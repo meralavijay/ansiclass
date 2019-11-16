@@ -4,7 +4,7 @@
   gather_facts: true # this will make not to gather facts before running tasks
 
   vars: 
-    winyml = "{% if ansible_env.subrole == 'web' %}webrole.yml{% elif ansible_env.mainrole == 'win' -%}winrole.yml{% endif %}"   
+    winyml: "{% if ansible_env.subrole == 'web' %}webrole.yml{% elif ansible_env.mainrole == 'win' -%}winrole.yml{% endif %}"   
   tasks: 
     - name: Create Folder &Stop Service
       debug:
