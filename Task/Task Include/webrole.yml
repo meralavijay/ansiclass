@@ -1,0 +1,6 @@
+---
+- name: Stop service BITS, if not stopped
+  win_service:
+    name: BITS
+    state: stopped
+...

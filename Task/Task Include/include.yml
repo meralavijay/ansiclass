@@ -1,0 +1,15 @@
+---
+-
+  hosts: all
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: Create Folder &Stop Service
+      debug:
+           msg: play1-task1
+
+    - include_tasks: webrole.yml
+     when: ansible_mainrole == "win"
+    - include_tasks: winrole.yml
+     when: ansible_subrole == "web"    
+...

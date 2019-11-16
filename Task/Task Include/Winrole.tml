@@ -1,0 +1,6 @@
+---
+- name: create Inetpub folder
+  win_file:
+    path: C:\Inetpub
+    state: directory
+...
