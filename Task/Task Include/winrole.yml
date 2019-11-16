@@ -1,7 +1,7 @@
 ---
 - name: create Inetpub folder
   win_file:
-    path: C:\Inetpub
+    path: C:\123
     state: directory
   when: ansible_env.subrole == "web"   
 ...
