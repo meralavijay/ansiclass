@@ -6,7 +6,7 @@
       debug:
         msg: >
             This is test if ansible
-             {% for ipv4 in ansible_all_ipv4_addresses -%}
+             {% for ipv4 in ansible_ip_addresses -%}
                    IP Address entry {{ loop.index }} = {{ ipv4 }}
              {% endfor -%}
 
